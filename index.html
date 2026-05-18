@@ -3,130 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Waseem Munir</title>
+  <title>Waseem Munir | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
- 
-  <!-- NAV -->
-  <nav>
-    <span class="nav-logo">WM</span>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="labs.html">Cisco Labs</a></li>
-      <li><a href="https://github.com/kingwasp" target="_blank">GitHub ↗</a></li>
-      <li><a href="https://linkedin.com/in/waseem-munir" target="_blank">LinkedIn ↗</a></li>
-    </ul>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Waseem Munir</a>
+      <ul class="nav-links">
+        <li><a href="https://linkedin.com/in/waseem-munir" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="https://github.com/kingwasp" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </div>
   </nav>
- 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-tag">Available for Internships & Opportunities</div>
-    <h1>Waseem<br><span class="accent">Munir.</span></h1>
-    <p class="hero-sub">IT & Computer Engineering @ UW Seattle '28 — CCNA Certified. Building things at the intersection of networking, software, and AI.</p>
-    <div class="hero-btns">
-      <a href="labs.html" class="btn-primary">View Cisco Labs</a>
-      <a href="https://github.com/kingwasp" target="_blank" class="btn-ghost">GitHub ↗</a>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section hero">
+      <div class="container container-narrow">
+        <h1 class="hero-title">Hello, I'm Waseem.</h1>
+        <p class="hero-subtitle">
+          A Computer Engineering student at the <strong>University of Washington Seattle</strong> (Class of 2028). 
+          I bridge the gap between software development, networking infrastructure, and AI.
+        </p>
+        <div class="hero-actions">
+          <a href="#experience" class="btn">View Experience</a>
+          <a href="labs.html" class="btn btn-secondary">Read my Technical Labs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & SKILLS -->
+    <section class="section bg-light" id="about">
+      <div class="container">
+        <div class="grid-2">
+          
+          <div class="about-block">
+            <h2 class="section-title">About Me</h2>
+            <p>
+              Technology is about building reliable, impactful systems. I balance my time studying Computer Engineering 
+              at UW, developing software, and getting hands-on with enterprise networking equipment. 
+              My goal is to cultivate a deep, enduring understanding of both the logic that builds modern applications 
+              and the networks that deliver them.
+            </p>
+            <div class="cert-highlight mt-4">
+              <span class="cert-badge">CCNA Certified</span>
+              <p class="small-text mt-2">
+                Proven core knowledge in enterprise routing, switching, wireless access, and network security fundamentals.
+              </p>
+            </div>
+          </div>
+
+          <div class="skills-block">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul class="skills-list">
+              <li>
+                <strong>Software Development</strong>
+                Python, Java, C#, Dart, Flutter
+              </li>
+              <li>
+                <strong>Networking</strong>
+                Cisco, FortiGate, Palo Alto, VPNs, Routing & Switching
+              </li>
+              <li>
+                <strong>AI & Cloud</strong>
+                AWS (EC2, VPC, S3), LLMs, AI integrations
+              </li>
+              <li>
+                <strong>Tools & Workflow</strong>
+                Git, Linux, Wireshark, VS Code
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE TIMELINE -->
+    <section class="section" id="experience">
+      <div class="container container-narrow">
+        <h2 class="section-title text-center mb-5">Work Experience</h2>
+        
+        <div class="timeline">
+          
+          <!-- Experience 1 -->
+          <div class="timeline-entry">
+            <div class="timeline-date">Sep 2025 – Present</div>
+            <div class="timeline-content">
+              <h3 class="role">Tech Intern</h3>
+              <p class="company">TheSanad</p>
+              <ul class="duties">
+                <li>Developing and refining cross-platform mobile application features using Dart and Flutter.</li>
+                <li>Collaborating with cross-functional teams to implement updates scaled for rapid start-up growth.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-entry">
+            <div class="timeline-date">Dec 2024 – Present</div>
+            <div class="timeline-content">
+              <h3 class="role">Outreach Coordinator</h3>
+              <p class="company">BC Muslim Student Association</p>
+              <ul class="duties">
+                <li>Managing community outreach efforts and fostering interfaith dialogue on campus.</li>
+                <li>Organizing events, technical workshops, and regular informational sessions for members.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="timeline-entry">
+            <div class="timeline-date">Nov 2024 – Jun 2025</div>
+            <div class="timeline-content">
+              <h3 class="role">Civic Engagement Coordinator</h3>
+              <p class="company">Bellevue College</p>
+              <ul class="duties">
+                <li>Coordinated campus-wide outreach through event planning, social media, and newsletters.</li>
+                <li>Led legislative initiatives to connect students directly with local and state representatives.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 4 -->
+          <div class="timeline-entry">
+            <div class="timeline-date">Jul 2024 – Apr 2025</div>
+            <div class="timeline-content">
+              <h3 class="role">Coding Instructor</h3>
+              <p class="company">Code Ninjas</p>
+              <ul class="duties">
+                <li>Taught foundational programming concepts, logic, and debugging to young students.</li>
+                <li>Guided hands-on projects transitioning block-based concepts into written code.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Waseem Munir. Built with care.</p>
     </div>
-  </section>
- 
-  <!-- SKILLS -->
-  <section class="section">
-    <h2 class="section-title">Skills & Certs</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <div class="skill-icon">🛡️</div>
-        <h3>CCNA Certified</h3>
-        <p>Routing, switching, VPNs, wireless, network security fundamentals</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">💻</div>
-        <h3>Software Dev</h3>
-        <p>Python, Java, C#, Dart/Flutter — 3 years of hands-on experience</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">📱</div>
-        <h3>Mobile Dev</h3>
-        <p>Building cross-platform apps with Dart & Flutter at TheSanad</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🌐</div>
-        <h3>Networking</h3>
-        <p>Cisco, FortiGate, Palo Alto — hands-on lab experience with enterprise tools</p>
-      </div>
-    </div>
-  </section>
- 
-  <!-- EXPERIENCE -->
-  <section class="section">
-    <h2 class="section-title">Experience</h2>
-    <div class="timeline">
- 
-      <div class="timeline-item">
-        <div class="timeline-meta">
-          <span class="timeline-date">Sep 2025 – Present</span>
-          <span class="timeline-badge">Current</span>
-        </div>
-        <h3>Tech Intern</h3>
-        <h4>TheSanad · Remote, Bellevue WA</h4>
-        <ul>
-          <li>Developing and refining mobile app features using Dart/Flutter</li>
-          <li>Collaborating with team to implement updates aligned with startup growth goals</li>
-        </ul>
-      </div>
- 
-      <div class="timeline-item">
-        <div class="timeline-meta">
-          <span class="timeline-date">Dec 2024 – Present</span>
-        </div>
-        <h3>Outreach Coordinator</h3>
-        <h4>BC Muslim Student Association · Bellevue, WA</h4>
-        <ul>
-          <li>Managing MSA outreach efforts and fostering interfaith dialogue on campus</li>
-          <li>Organizing events, workshops, and informational sessions</li>
-        </ul>
-      </div>
- 
-      <div class="timeline-item">
-        <div class="timeline-meta">
-          <span class="timeline-date">Nov 2024 – Jun 2025</span>
-        </div>
-        <h3>Civic Engagement Coordinator</h3>
-        <h4>Bellevue College · Bellevue, WA</h4>
-        <ul>
-          <li>Coordinated campus-wide outreach through events, social media, and newsletters</li>
-          <li>Led "Bulldogs at the Capitol" initiative connecting students with legislators</li>
-          <li>Hosted voter registration drives and managed student volunteers</li>
-        </ul>
-      </div>
- 
-      <div class="timeline-item">
-        <div class="timeline-meta">
-          <span class="timeline-date">Jul 2024 – Apr 2025</span>
-        </div>
-        <h3>Coding Instructor</h3>
-        <h4>Code Ninjas · Newcastle, WA</h4>
-        <ul>
-          <li>Taught coding to kids ages 7–14 through game-based projects</li>
-          <li>Tailored feedback to individual skill levels and communicated progress to parents</li>
-        </ul>
-      </div>
- 
-    </div>
-  </section>
- 
-  <!-- CTA -->
-  <section class="cta-section">
-    <h2>Let's connect.</h2>
-    <p>Open to internships, part-time roles, and collaborative projects.</p>
-    <a href="https://linkedin.com/in/waseem-munir" target="_blank" class="btn-primary">Reach out on LinkedIn ↗</a>
-  </section>
- 
-  <footer>
-    <span>Waseem Munir · kingwasp.github.io</span>
   </footer>
- 
+
 </body>
 </html>

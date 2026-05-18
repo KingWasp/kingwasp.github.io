@@ -3,63 +3,201 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cisco Labs — Waseem Munir</title>
+  <title>Technical Labs | Waseem Munir</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
- 
-  <!-- NAV -->
-  <nav>
-    <span class="nav-logo">WM</span>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="labs.html" class="active">Cisco Labs</a></li>
-      <li><a href="https://github.com/kingwasp" target="_blank">GitHub ↗</a></li>
-      <li><a href="https://linkedin.com/in/waseem-munir" target="_blank">LinkedIn ↗</a></li>
-    </ul>
-  </nav>
- 
-  <!-- PAGE HEADER -->
-  <section class="page-header">
-    <h1>Cisco <span class="accent">Labs.</span></h1>
-    <p>Hands-on technical write-ups from my CCNA studies — each one a full walkthrough of a real networking lab scenario.</p>
-  </section>
- 
-  <!-- LABS GRID -->
-  <section class="section">
-    <div class="labs-grid">
- 
-      <!-- LAB CARD — add more cards below this one as you add PDFs -->
-      <a href="labs/AWS%20Lab%201%2C2%2C3.pdf" target="_blank" class="lab-card">
-        <div class="lab-number">01</div>
-        <div class="lab-info">
-          <h3>AWS Labs 1, 2 & 3</h3>
-          <p>Cloud infrastructure fundamentals — provisioning, configuring, and managing AWS services hands-on.</p>
-          <span class="lab-tag">AWS Academy</span>
-        </div>
-        <div class="lab-arrow">↗</div>
-      </a>
- 
-      <!-- TEMPLATE — copy and paste this block for each new lab you add
-      <a href="labs/YOUR-FILE-NAME.pdf" target="_blank" class="lab-card">
-        <div class="lab-number">02</div>
-        <div class="lab-info">
-          <h3>Lab Title Here</h3>
-          <p>Short description of what this lab covers.</p>
-          <span class="lab-tag">Tag Here</span>
-        </div>
-        <div class="lab-arrow">↗</div>
-      </a>
-      -->
- 
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Waseem Munir</a>
+      <ul class="nav-links">
+        <li><a href="https://linkedin.com/in/waseem-munir" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="https://github.com/kingwasp" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
     </div>
-  </section>
- 
-  <footer>
-    <span>Waseem Munir · kingwasp.github.io</span>
+  </nav>
+
+  <main class="page-content">
+    <div class="container container-medium">
+      <header class="page-header">
+        <h1 class="page-title">Technical Labs Archive</h1>
+        <p class="page-description">
+          A document library of my hands-on technical write-ups and infrastructure labs. 
+          Each lab represents applied knowledge in networking, cloud infrastructure, and security.
+        </p>
+      </header>
+      
+      <div class="document-library">
+        
+        <div class="library-header">
+          <span class="col-id">ID</span>
+          <span class="col-name">Title & Description</span>
+          <span class="col-category">Category</span>
+          <span class="col-action">Link</span>
+        </div>
+
+        <div class="library-list">
+          
+          <!-- LAB 01 -->
+          <div class="library-item">
+            <span class="item-id">001</span>
+            <div class="item-details">
+              <h3>AWS Labs 1, 2 & 3</h3>
+              <p>Cloud infrastructure fundamentals — provisioning, configuring, and managing AWS services hands-on.</p>
+            </div>
+            <span class="item-category">AWS</span>
+            <a href="labs/AWS%20Lab%201%2C2%2C3.pdf" target="_blank" rel="noopener noreferrer" class="item-link">View PDF &rarr;</a>
+          </div>
+
+          <!-- PLACEHOLDERS FOR FUTURE LABS -->
+          <!-- Lab 02 Placeholder 
+          <div class="library-item">
+            <span class="item-id">002</span>
+            <div class="item-details">
+              <h3>Lab Title 02</h3>
+              <p>Brief description of the lab objectives.</p>
+            </div>
+            <span class="item-category">Networking</span>
+            <a href="#" class="item-link">View PDF &rarr;</a>
+          </div>
+          -->
+
+          <!-- Lab 03 Placeholder 
+          <div class="library-item">
+            <span class="item-id">003</span>
+            <div class="item-details">
+              <h3>Lab Title 03</h3>
+              <p>Brief description of the lab objectives.</p>
+            </div>
+            <span class="item-category">Cisco</span>
+            <a href="#" class="item-link">View PDF &rarr;</a>
+          </div>
+          -->
+
+          <!-- Lab 04 Placeholder 
+          <div class="library-item">
+            <span class="item-id">004</span>
+            <div class="item-details">
+              <h3>Lab Title 04</h3>
+              <p>Brief description of the lab objectives.</p>
+            </div>
+            <span class="item-category">Cisco</span>
+            <a href="#" class="item-link">View PDF &rarr;</a>
+          </div>
+          -->
+
+          <!-- Lab 05 Placeholder 
+          <div class="library-item">
+            <span class="item-id">005</span>
+            <div class="item-details">
+              <h3>Lab Title 05</h3>
+              <p>Brief description of the lab objectives.</p>
+            </div>
+            <span class="item-category">Security</span>
+            <a href="#" class="item-link">View PDF &rarr;</a>
+          </div>
+          -->
+
+          <!-- Lab 06 Placeholder 
+          <div class="library-item">
+            <span class="item-id">006</span>
+            <div class="item-details">
+              <h3>Lab Title 06</h3>
+              <p>Brief description of the lab objectives.</p>
+            </div>
+            <span class="item-category">Security</span>
+            <a href="#" class="item-link">View PDF &rarr;</a>
+          </div>
+          -->
+
+          <!-- Lab 07 Placeholder 
+          <div class="library-item">
+            <span class="item-id">007</span>
+            <div class="item-details">
+              <h3>Lab Title 07</h3>
+              <p>Brief description of the lab objectives.</p>
+            </div>
+            <span class="item-category">Cloud</span>
+            <a href="#" class="item-link">View PDF &rarr;</a>
+          </div>
+          -->
+
+          <!-- Lab 08 Placeholder 
+          <div class="library-item">
+            <span class="item-id">008</span>
+            <div class="item-details">
+              <h3>Lab Title 08</h3>
+              <p>Brief description of the lab objectives.</p>
+            </div>
+            <span class="item-category">Networking</span>
+            <a href="#" class="item-link">View PDF &rarr;</a>
+          </div>
+          -->
+
+          <!-- Lab 09 Placeholder 
+          <div class="library-item">
+            <span class="item-id">009</span>
+            <div class="item-details">
+              <h3>Lab Title 09</h3>
+              <p>Brief description of the lab objectives.</p>
+            </div>
+            <span class="item-category">Networking</span>
+            <a href="#" class="item-link">View PDF &rarr;</a>
+          </div>
+          -->
+
+          <!-- Lab 10 Placeholder 
+          <div class="library-item">
+            <span class="item-id">010</span>
+            <div class="item-details">
+              <h3>Lab Title 10</h3>
+              <p>Brief description of the lab objectives.</p>
+            </div>
+            <span class="item-category">Systems</span>
+            <a href="#" class="item-link">View PDF &rarr;</a>
+          </div>
+          -->
+
+          <!-- Lab 11 Placeholder 
+          <div class="library-item">
+            <span class="item-id">011</span>
+            <div class="item-details">
+              <h3>Lab Title 11</h3>
+              <p>Brief description of the lab objectives.</p>
+            </div>
+            <span class="item-category">Systems</span>
+            <a href="#" class="item-link">View PDF &rarr;</a>
+          </div>
+          -->
+
+          <!-- Lab 12 Placeholder 
+          <div class="library-item">
+            <span class="item-id">012</span>
+            <div class="item-details">
+              <h3>Lab Title 12</h3>
+              <p>Brief description of the lab objectives.</p>
+            </div>
+            <span class="item-category">Other</span>
+            <a href="#" class="item-link">View PDF &rarr;</a>
+          </div>
+          -->
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Waseem Munir. Built with care.</p>
+    </div>
   </footer>
- 
+
 </body>
 </html>
