@@ -4,21 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Technical Labs | Waseem Munir</title>
+  <meta name="description" content="Technical Labs by Waseem Munir. Infrastructure and security write-ups." />
+  <meta property="og:title" content="Technical Labs | Waseem Munir" />
+  <meta property="og:description" content="Portfolio showcasing cloud, security, and software engineering projects." />
+  <meta property="og:type" content="website" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- NAVIGATION -->
   <nav class="site-nav">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">Waseem Munir</a>
+      <div class="nav-left">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <a href="index.html" class="nav-logo">Waseem Munir</a>
+      </div>
       <ul class="nav-links">
         <li><a href="labs.html" class="nav-active">Technical Labs</a></li>
+        <li><a href="https://www.credly.com/users/waseem-munir/badges/credly" target="_blank" rel="noopener noreferrer">Credly</a></li>
         <li><a href="https://linkedin.com/in/waseem-munir" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="labs/Munir%20Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
         <li><a href="https://github.com/kingwasp" target="_blank" rel="noopener noreferrer">GitHub</a></li>
       </ul>
     </div>
@@ -31,7 +41,7 @@
         <p class="page-description">
           Write-ups and infrastructure labs from my coursework and projects.
         </p>
-        <p class="labs-counter">1 of 12 published — updated as completed</p>
+        <p class="labs-counter">7 of 12 published — updated as completed</p>
       </header>
       
       <div class="document-library">
@@ -54,141 +64,74 @@
               <p>Cloud infrastructure fundamentals — provisioning, configuring, and managing AWS services hands-on.</p>
             </div>
             <span class="item-category">AWS</span>
-            <a href="labs/AWS%20Lab%201%2C2%2C3.pdf" target="_blank" rel="noopener noreferrer" class="item-link">View PDF &rarr;</a>
+            <a href="labs/Munir%20AWS%20123%20Lab.pdf" target="_blank" rel="noopener noreferrer" class="item-link">View PDF &rarr;</a>
           </div>
 
-          <!-- PLACEHOLDERS FOR FUTURE LABS -->
-          <!-- Lab 02 Placeholder 
+          <!-- LAB 02 -->
           <div class="library-item">
             <span class="item-id">002</span>
             <div class="item-details">
-              <h3>Lab Title 02</h3>
-              <p>Brief description of the lab objectives.</p>
+              <h3>AWS Labs 4, 5 & 6</h3>
+              <p>Advanced cloud concepts — load balancing, auto-scaling, and IAM configuration.</p>
             </div>
-            <span class="item-category">Networking</span>
-            <a href="#" class="item-link">View PDF &rarr;</a>
+            <span class="item-category">AWS</span>
+            <a href="labs/Munir%20AWS%20456%20Lab.pdf" target="_blank" rel="noopener noreferrer" class="item-link">View PDF &rarr;</a>
           </div>
-          -->
 
-          <!-- Lab 03 Placeholder 
+          <!-- LAB 03 -->
           <div class="library-item">
             <span class="item-id">003</span>
             <div class="item-details">
-              <h3>Lab Title 03</h3>
-              <p>Brief description of the lab objectives.</p>
+              <h3>Layer 2 Attacks Lab</h3>
+              <p>Network security — simulating and mitigating Layer 2 attacks like ARP spoofing and MAC flooding.</p>
             </div>
-            <span class="item-category">Cisco</span>
-            <a href="#" class="item-link">View PDF &rarr;</a>
+            <span class="item-category">Security</span>
+            <a href="labs/Munir%20L2%20Attacks%20Lab.pdf" target="_blank" rel="noopener noreferrer" class="item-link">View PDF &rarr;</a>
           </div>
-          -->
 
-          <!-- Lab 04 Placeholder 
+          <!-- LAB 04 -->
           <div class="library-item">
             <span class="item-id">004</span>
             <div class="item-details">
-              <h3>Lab Title 04</h3>
-              <p>Brief description of the lab objectives.</p>
+              <h3>Multi-eBGP Lab</h3>
+              <p>Advanced routing — configuring and troubleshooting multi-area eBGP environments.</p>
             </div>
-            <span class="item-category">Cisco</span>
-            <a href="#" class="item-link">View PDF &rarr;</a>
+            <span class="item-category">Networking</span>
+            <a href="labs/Munir%20Multi-eBGP%20Lab.pdf" target="_blank" rel="noopener noreferrer" class="item-link">View PDF &rarr;</a>
           </div>
-          -->
 
-          <!-- Lab 05 Placeholder 
+          <!-- LAB 05 -->
           <div class="library-item">
             <span class="item-id">005</span>
             <div class="item-details">
-              <h3>Lab Title 05</h3>
-              <p>Brief description of the lab objectives.</p>
+              <h3>OSPF Lab</h3>
+              <p>Routing protocols — setting up OSPF with multiple areas and verifying connectivity.</p>
             </div>
-            <span class="item-category">Security</span>
-            <a href="#" class="item-link">View PDF &rarr;</a>
+            <span class="item-category">Networking</span>
+            <a href="labs/Munir%20OSPF%20Lab.pdf" target="_blank" rel="noopener noreferrer" class="item-link">View PDF &rarr;</a>
           </div>
-          -->
 
-          <!-- Lab 06 Placeholder 
+          <!-- LAB 06 -->
           <div class="library-item">
             <span class="item-id">006</span>
             <div class="item-details">
-              <h3>Lab Title 06</h3>
-              <p>Brief description of the lab objectives.</p>
+              <h3>AI Integration Lab</h3>
+              <p>Machine learning — integrating AI models into applications and evaluating performance.</p>
             </div>
-            <span class="item-category">Security</span>
-            <a href="#" class="item-link">View PDF &rarr;</a>
+            <span class="item-category">AI</span>
+            <a href="labs/Munir%20AI%20Lab.pdf" target="_blank" rel="noopener noreferrer" class="item-link">View PDF &rarr;</a>
           </div>
-          -->
 
-          <!-- Lab 07 Placeholder 
+          <!-- LAB 07 -->
           <div class="library-item">
             <span class="item-id">007</span>
             <div class="item-details">
-              <h3>Lab Title 07</h3>
-              <p>Brief description of the lab objectives.</p>
-            </div>
-            <span class="item-category">Cloud</span>
-            <a href="#" class="item-link">View PDF &rarr;</a>
-          </div>
-          -->
-
-          <!-- Lab 08 Placeholder 
-          <div class="library-item">
-            <span class="item-id">008</span>
-            <div class="item-details">
-              <h3>Lab Title 08</h3>
-              <p>Brief description of the lab objectives.</p>
-            </div>
-            <span class="item-category">Networking</span>
-            <a href="#" class="item-link">View PDF &rarr;</a>
-          </div>
-          -->
-
-          <!-- Lab 09 Placeholder 
-          <div class="library-item">
-            <span class="item-id">009</span>
-            <div class="item-details">
-              <h3>Lab Title 09</h3>
-              <p>Brief description of the lab objectives.</p>
-            </div>
-            <span class="item-category">Networking</span>
-            <a href="#" class="item-link">View PDF &rarr;</a>
-          </div>
-          -->
-
-          <!-- Lab 10 Placeholder 
-          <div class="library-item">
-            <span class="item-id">010</span>
-            <div class="item-details">
-              <h3>Lab Title 10</h3>
-              <p>Brief description of the lab objectives.</p>
+              <h3>Windows Administration Lab</h3>
+              <p>Systems administration — managing Active Directory, Group Policy, and Windows Server.</p>
             </div>
             <span class="item-category">Systems</span>
-            <a href="#" class="item-link">View PDF &rarr;</a>
+            <a href="labs/Munir%20Windows%20Lab.pdf" target="_blank" rel="noopener noreferrer" class="item-link">View PDF &rarr;</a>
           </div>
-          -->
-
-          <!-- Lab 11 Placeholder 
-          <div class="library-item">
-            <span class="item-id">011</span>
-            <div class="item-details">
-              <h3>Lab Title 11</h3>
-              <p>Brief description of the lab objectives.</p>
-            </div>
-            <span class="item-category">Systems</span>
-            <a href="#" class="item-link">View PDF &rarr;</a>
-          </div>
-          -->
-
-          <!-- Lab 12 Placeholder 
-          <div class="library-item">
-            <span class="item-id">012</span>
-            <div class="item-details">
-              <h3>Lab Title 12</h3>
-              <p>Brief description of the lab objectives.</p>
-            </div>
-            <span class="item-category">Other</span>
-            <a href="#" class="item-link">View PDF &rarr;</a>
-          </div>
-          -->
 
         </div>
       </div>
@@ -197,9 +140,10 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 Waseem Munir. Built with care.</p>
+      <p>&copy; 2026 Waseem Munir. Built with purpose.</p>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

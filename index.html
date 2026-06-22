@@ -4,21 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Waseem Munir | Portfolio</title>
+  <meta name="description" content="Waseem Munir's technical portfolio. Bridging software development and network infrastructure." />
+  <meta property="og:title" content="Waseem Munir | Portfolio" />
+  <meta property="og:description" content="Computer Engineering student at UW. Portfolio showcasing cloud, security, and software engineering projects." />
+  <meta property="og:type" content="website" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- NAVIGATION -->
   <nav class="site-nav">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">Waseem Munir</a>
+      <div class="nav-left">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <a href="index.html" class="nav-logo">Waseem Munir</a>
+      </div>
       <ul class="nav-links">
         <li><a href="labs.html">Technical Labs</a></li>
+        <li><a href="https://www.credly.com/users/waseem-munir/badges/credly" target="_blank" rel="noopener noreferrer">Credly</a></li>
         <li><a href="https://linkedin.com/in/waseem-munir" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="labs/Munir%20Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
         <li><a href="https://github.com/kingwasp" target="_blank" rel="noopener noreferrer">GitHub</a></li>
       </ul>
     </div>
@@ -27,14 +37,17 @@
   <main>
     <!-- HERO SECTION -->
     <section class="section hero">
-      <div class="container container-narrow">
-        <h1 class="hero-title">I'm Waseem.</h1>
-        <p class="hero-subtitle">
-          Computer Engineering student at <strong>University of Washington</strong>, Class of 2028. I work with software, networking, and infrastructure. Currently building mobile apps at TheSanad.
-        </p>
-        <div class="hero-actions">
-          <a href="#experience" class="btn">View Experience</a>
-          <a href="labs.html" class="btn btn-secondary">Read my Technical Labs</a>
+      <div class="container hero-content-with-image">
+        <img src="assets/Waseem%20Munir%20Headshot.jpg" alt="Waseem Munir" class="hero-image" />
+        <div class="hero-text">
+          <h1 class="hero-title">I engineer robust systems.</h1>
+          <p class="hero-subtitle">
+            Bridging the gap between software development and network infrastructure. Currently studying Computer Engineering at the <strong>University of Washington</strong> (Class of '28) and building scalable mobile experiences at TheSanad.
+          </p>
+          <div class="hero-actions">
+            <a href="#about" class="btn">About Me</a>
+            <a href="labs.html" class="btn btn-secondary">Technical Labs</a>
+          </div>
         </div>
       </div>
     </section>
@@ -44,7 +57,7 @@
       <div class="container container-narrow">
         <h2 class="section-title">About Me</h2>
         <p class="lead">
-          I'm interested in how systems work—both the code that runs them and the networks that connect them. I spend my time coding, studying for my CCNA, and learning from real infrastructure work. I like building things that work reliably.
+          My passion lies in dismantling complexity. Whether I'm architecting cloud environments, writing resilient code, or securing network topologies, I thrive on building infrastructure that is scalable, secure, and seamlessly connected. I blend hands-on software engineering with enterprise networking principles to create comprehensive technical solutions.
         </p>
       </div>
     </section>
@@ -53,12 +66,31 @@
     <section class="section certifications-section" id="certifications">
       <div class="container container-narrow">
         <h2 class="section-title">Credentials</h2>
-        <div class="cert-card cert-card-prominent">
-          <div class="cert-content">
-            <p class="cert-title">CCNA Certified</p>
-            <p class="cert-meta">Cisco Certified Network Associate. Routing, switching, security, and enterprise networking.</p>
+        
+        <div class="credentials-grid">
+          <div class="cert-card cert-card-prominent">
+            <div class="cert-content">
+              <p class="cert-title">CCNA</p>
+              <p class="cert-meta">Cisco Certified Network Associate. Enterprise networking, routing, switching, and security fundamentals.</p>
+            </div>
+            <span class="cert-badge badge-active">Active</span>
           </div>
-          <span class="cert-badge badge-active">Active</span>
+
+          <div class="cert-card cert-card-prominent">
+            <div class="cert-content">
+              <p class="cert-title">AWS Certified Cloud Practitioner</p>
+              <p class="cert-meta">Cloud fundamentals, AWS services, security, architecture, and pricing.</p>
+            </div>
+            <span class="cert-badge badge-active">Active</span>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-content">
+              <p class="cert-title">CCNP: ENCOR</p>
+              <p class="cert-meta">Implementing and Operating Cisco Enterprise Network Core Technologies.</p>
+            </div>
+            <span class="cert-badge badge-progress">In Progress</span>
+          </div>
         </div>
       </div>
     </section>
@@ -69,94 +101,53 @@
         <h2 class="section-title">Technical Skills</h2>
         <ul class="skills-list skills-grid">
           <li>
-            <strong>Software Development</strong>
-            Python, Java, C#, Dart, Flutter
+            <strong>Software Engineering</strong>
+            <ul class="skills-bullets">
+              <li>Python</li>
+              <li>Java</li>
+              <li>C#</li>
+              <li>Dart</li>
+              <li>Flutter</li>
+              <li>Git</li>
+            </ul>
           </li>
           <li>
-            <strong>Networking</strong>
-            Cisco, FortiGate, Palo Alto, VPNs, Routing & Switching
+            <strong>Cloud & Infrastructure</strong>
+            <ul class="skills-bullets">
+              <li>AWS (EC2, VPC, S3)</li>
+              <li>Active Directory</li>
+              <li>Group Policy</li>
+              <li>Windows Server</li>
+            </ul>
           </li>
           <li>
-            <strong>AI & Cloud</strong>
-            AWS (EC2, VPC, S3), LLMs, AI integrations
+            <strong>Network & Security</strong>
+            <ul class="skills-bullets">
+              <li>Cisco, FortiGate, Palo Alto</li>
+              <li>VPNs, OSPF, BGP</li>
+              <li>Wireshark</li>
+              <li>Layer 2 Security</li>
+            </ul>
           </li>
           <li>
-            <strong>Tools & Workflow</strong>
-            Git, Linux, Wireshark, VS Code
+            <strong>AI & ML</strong>
+            <ul class="skills-bullets">
+              <li>LLMs</li>
+              <li>Prompt Engineering</li>
+              <li>AI Integrations</li>
+            </ul>
           </li>
         </ul>
-      </div>
-    </section>
-
-    <!-- WORK EXPERIENCE TIMELINE -->
-    <section class="section" id="experience">
-      <div class="container container-narrow">
-        <h2 class="section-title">Work Experience</h2>
-        
-        <div class="timeline">
-          
-          <!-- Experience 1 -->
-          <div class="timeline-entry">
-            <div class="timeline-date">Sep 2025 – Present</div>
-            <div class="timeline-content">
-              <h3 class="role">Tech Intern</h3>
-              <p class="company">TheSanad</p>
-              <ul class="duties">
-                <li>Building cross-platform mobile apps with Dart and Flutter.</li>
-                <li>Working on features and scaling the app as the startup grows.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Experience 2 -->
-          <div class="timeline-entry">
-            <div class="timeline-date">Dec 2024 – Present</div>
-            <div class="timeline-content">
-              <h3 class="role">Outreach Coordinator</h3>
-              <p class="company">BC Muslim Student Association</p>
-              <ul class="duties">
-                <li>Organized events and outreach on campus.</li>
-                <li>Coordinated interfaith initiatives and community programs.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Experience 3 -->
-          <div class="timeline-entry">
-            <div class="timeline-date">Nov 2024 – Jun 2025</div>
-            <div class="timeline-content">
-              <h3 class="role">Civic Engagement Coordinator</h3>
-              <p class="company">Bellevue College</p>
-              <ul class="duties">
-                <li>Coordinated outreach and campus engagement initiatives.</li>
-                <li>Ran student voter registration and connected students with local representatives.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Experience 4 -->
-          <div class="timeline-entry">
-            <div class="timeline-date">Jul 2024 – Apr 2025</div>
-            <div class="timeline-content">
-              <h3 class="role">Coding Instructor</h3>
-              <p class="company">Code Ninjas</p>
-              <ul class="duties">
-                <li>Taught kids ages 7–14 programming concepts through project-based learning.</li>
-                <li>Gave feedback on projects and communicated progress with parents.</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 Waseem Munir. Built with care.</p>
+      <p>&copy; 2026 Waseem Munir. Built with purpose.</p>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
